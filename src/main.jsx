@@ -9,6 +9,7 @@ import Catalog from './components/Catalog.jsx'
 
 const router = createBrowserRouter([
   {
+    basename: import.meta.env.DEV ? '/' : '/kate-grunt-agro/',
     path: '/',
     element: <App />,
     children: [
